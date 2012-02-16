@@ -594,4 +594,8 @@ define('PLUGIN_ENABLE_TRUE', "1");
 define('PLUGIN_ENABLE_FALSE', "2");
 /** 郵便番号CSVのZIPアーカイブファイルの取得元 */
 define('ZIP_DOWNLOAD_URL', "http://www.post.japanpost.jp/zipcode/dl/kogaki/zip/ken_all.zip");
+//2012.01.15 追加
+/** 表示在庫タイプ */
+define('DEFAULT_VIEW_STOCK_TYPE', "1");
+
 ?>

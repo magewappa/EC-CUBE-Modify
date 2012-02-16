@@ -45,6 +45,11 @@ class LC_Page_Admin_Products_Ex extends LC_Page_Admin_Products {
      */
     function init() {
         parent::init();
+        //在庫タイプの追加
+        $masterData = new SC_DB_MasterData_Ex();
+        $this->arrViewStockType = $masterData->getMasterData("mtb_view_stock_type");
+
+        
     }
 
     /**

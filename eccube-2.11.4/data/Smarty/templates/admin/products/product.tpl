@@ -192,8 +192,13 @@ function selectAll(target) {
                 <input type="checkbox" name="stock_unlimited" value="1" <!--{if $arrForm.stock_unlimited == "1"}-->checked<!--{/if}--> onclick="fnCheckStockLimit('<!--{$smarty.const.DISABLED_RGB}-->');"/>無制限
             </td>
         </tr>
+        <tr>
+            <th>在庫タイプ<span class="attention"> *</span></th>
+            <td>
+                <!--{html_radios name="view_stock_type_id" options=$arrViewStockType selected=$arrForm.view_stock_type_id separator='&nbsp;&nbsp;'}-->
+            </td>
+        </tr>
         <!--{/if}-->
-
         <tr>
             <th>商品送料</th>
             <td>
